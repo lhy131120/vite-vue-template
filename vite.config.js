@@ -7,6 +7,8 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
+  // base -> replace repository name
+  base: 'vite-vue-template',
   plugins: [vue(), vueDevTools(), tailwindcss()],
   resolve: {
     alias: {

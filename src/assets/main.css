@@ -1,20 +1,71 @@
 /* @import './base.css'; */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import "tailwindcss";
 
 @theme {
 
   --font-sans: "Noto Sans TC", ui-sans-serif, system-ui, sans-serif;
+  --font-poppins: "Poppins", sans-serif;
 
   /* color */
+  --color-primary-120: #2B211C;
+  --color-primary-100: #4A3830;
+  --color-primary-80: #886658;
+  --color-primary-60: #A37F71;
+  --color-primary-40: #CBB6AF;
+  --color-primary-10: #F3EEEC;
+
+  --color-success-120: #48970F;
+  --color-success-100: #7CD31F;
+  --color-success-20: #DDFAA5;
+  --color-success-10: #F0FCD1;
+
+  --color-info-120: #1566B5;
+  --color-info-100: #2AAFFC;
+  --color-info-20: #A9EFFE;
+  --color-info-10: #D4F9FE;
+
   --color-alert-120: #B71D4F;
   --color-alert-100: #FF3A55;
   --color-alert-20: #FFBBB0;
   --color-alert-10: #FFE0D7;
+
+  --color-neutral-80: #4B4B4B;
+  --color-neutral-60: #909090;
+  --color-neutral-40: #ECECEC;
+  --color-neutral-15: #F4F4F4;
+  --color-neutral-10: #F9F9F9;
+
+  /* line-height */
+  --leading-tight: 1.2;
+
+  /* letter-spacing */
+  --tracking-wide: 0.02em;
+
 }
 
-@base {
-  html {
+@layer base {
+
+  html,
+  body {
     font-family: "Noto Sans TC", ui-sans-serif, system-ui, sans-serif;
   }
+
+  *,
+  *::before,
+  *::after {
+    @apply tracking-wide;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    line-height: var(--leading-tight);
+    font-weight: var(--font-weight-bold);
+  }
 }
+
+@component {}
