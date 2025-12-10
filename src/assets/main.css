@@ -1,0 +1,20 @@
+/* @import './base.css'; */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+
+  --font-sans: "Noto Sans TC", ui-sans-serif, system-ui, sans-serif;
+
+  /* color */
+  --color-alert-120: #B71D4F;
+  --color-alert-100: #FF3A55;
+  --color-alert-20: #FFBBB0;
+  --color-alert-10: #FFE0D7;
+}
+
+@base {
+  html {
+    font-family: "Noto Sans TC", ui-sans-serif, system-ui, sans-serif;
+  }
+}
