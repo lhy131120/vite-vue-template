@@ -1,0 +1,1 @@
+import{_ as t,c as s,a,o}from"./index-CtmLqcN6.js";const n={},c={class:"mainContent"};function r(i,e){return o(),s("main",c,[...e[0]||(e[0]=[a("h1",{class:"text-alert-20"},"This is a notice page",-1)])])}const l=t(n,[["render",r]]);export{l as default};

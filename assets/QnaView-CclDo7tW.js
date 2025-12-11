@@ -1,0 +1,1 @@
+import{_ as s,c as t,a,o as n}from"./index-CtmLqcN6.js";const o={},c={class:"mainContent"};function r(i,e){return n(),t("main",c,[...e[0]||(e[0]=[a("h1",{class:"text-alert-20"},"This is QNA page",-1)])])}const l=s(o,[["render",r]]);export{l as default};

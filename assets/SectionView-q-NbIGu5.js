@@ -1,0 +1,1 @@
+import{_ as s,c as a,a as t,o}from"./index-CtmLqcN6.js";const n="/vite-vue-template/assets/hero-img3-BFa8V4I_.jpg",c={},r={class:"mainContent"};function i(_,e){return o(),a("main",r,[...e[0]||(e[0]=[t("h1",{class:"text-alert-20"},"This is a section page",-1),t("img",{src:n,alt:""},null,-1)])])}const m=s(c,[["render",i]]);export{m as default};

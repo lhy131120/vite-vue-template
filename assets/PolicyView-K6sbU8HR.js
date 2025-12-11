@@ -1,0 +1,1 @@
+import{_ as s,c as t,a,o}from"./index-CtmLqcN6.js";const c={},n={class:"mainContent"};function r(i,e){return o(),t("main",n,[...e[0]||(e[0]=[a("h1",{class:"text-alert-20"},"This is a policy page",-1)])])}const _=s(c,[["render",r]]);export{_ as default};
