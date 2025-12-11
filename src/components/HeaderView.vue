@@ -2,6 +2,8 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 import { RouterLink } from 'vue-router'
 import LogoIcon from './icons/LogoIcon.vue';
+import SearchIcon from './icons/SearchIcon.vue';
+import CartIcon from './icons/CartIcon.vue';
 
 const isScrolled = ref(false)
 const isSticky = ref(false)
@@ -42,12 +44,14 @@ onUnmounted(() => {
           <RouterLink to="/" class=""><LogoIcon /></RouterLink>
         </h1>
         <div class="flex-1 flex items-center justify-between">
-          <div>
-            <form action="">
-              <input type="text" placeholder="搜尋景點、地點或城市">
+          <div class="">
+            <form action="" class="headerSearch relative">
+              <div class="absolute start-2.5 top-1/2 -translate-y-1/2"><SearchIcon /></div>
+              <input id="headerSearch" type="text" placeholder="搜尋景點、地點或城市" class="rounded-lg border border-neutral-40 bg-white text-neutral-80 py-3 pl-10 pr-4 text-base outline-none transition-all duration-200 focus:border-primary-100 focus:ring-4 focus:ring-[#4A38301A]">
             </form>
           </div>
-          <div>
+          <div class="flex items-center gap-4">
+            <button type="button" class="hover:cursor-pointer px-3 py-2"><CartIcon /></button>
             <button type="button" class="bg-primary-100 text-white rounded-xl px-8 py-4 font-semibold font-poppins hover:cursor-pointer hover:bg-primary-120 transition-all duration-300">登入 / 註冊</button>
           </div>
         </div>
@@ -74,4 +78,17 @@ onUnmounted(() => {
     background: rgba(255, 255, 255, 0.72);
     backdrop-filter: blur(4px);
   }
+
+  .headerSearch input[type="text"] {
+    width: max(400px, 100%);
+  }
+
+  .headerSearch input[type="text"]::placeholder {
+    color: var(--color-neutral-60);
+  }
+
+  .headerSearch.error input[type="text"] {
+    border: 1px solid var(--color-alert-100);
+  }
+
 </style>

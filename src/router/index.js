@@ -1,8 +1,8 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHashHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
@@ -21,6 +21,21 @@ const router = createRouter({
       path: '/section',
       name: 'section',
       component: () => import('../views/SectionView.vue'),
+    },
+    {
+      path: '/qna',
+      name: 'qna',
+      component: () => import('../views/QnaView.vue'),
+    },
+    {
+      path: '/policy',
+      name: 'policy',
+      component: () => import('../views/PolicyView.vue'),
+    },
+    {
+      path: '/notice',
+      name: 'notice',
+      component: () => import('../views/NoticeView.vue'),
     },
   ],
 })
